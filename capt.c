@@ -49,7 +49,7 @@ struct timeval newtv;
 
 //char gname[20];
 
-void INLINE errorexit();
+void errorexit();
 
 unsigned char cmdbuffer[8][256];
 
@@ -486,7 +486,7 @@ int compress_bitmap () {
 	return 1;
 }
 
-void INLINE errorexit() {
+void errorexit() {
 #ifdef DEBUG
    int* i = 0;
    (*i)++;
