@@ -18,6 +18,9 @@ collect2: error: ld returned 1 exit status
 make: *** [Makefile:13: capt] Error 1
 ```
 
+Tested on 
+* Rasberry Pi 1 Model B (very slow, about 3 minutes to print a page, barely usable)
+* Rasberry Pi 3 Model B (speed is acceptable)
 
 ## Linux Canon CAPT driver
 -----------------------
