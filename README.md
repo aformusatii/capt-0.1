@@ -22,30 +22,23 @@ make: *** [Makefile:13: capt] Error 1
 ## Linux Canon CAPT driver
 -----------------------
 In this package there is a linux driver for Canon printer using CAPT protocol.
-
 The general structure of the application is based on Rildo Pragana's driver for Samsung ML-85G, see : http://pragana.net - "Adventures in Linux Programming".
-
 It should support both A4 and Letter sized paper, but I only tested it with A4 sized paper.
 
 ## Install
 -------
-Type:
 ```sh
-make
+git clone https://github.com/aformusatii/capt-0.1.git
+cd capt-0.1
+# Compile driver
+sudo make
+# Install driver files
+sudo make install
+# You need to have USB Printer support in your kernel. Install the needed module via
+sudo modprobe usblp
+# And a new device should appear (/dev/usb/lp0). Change permissions to give access to the printer to users (this is also needed for CUPS to work.)
+sudo chmod a+rw /dev/usb/lp0
 ```
-Then log in as root and type:
-```sh
-make install
-```
-You need to have USB Printer support in your kernel. To install the needed module, type, as root:
-```sh
-modprobe usblp
-```
-And a new device should appear (/dev/usb/lp0). Type, as root:
-```sh
-chmod a+rw /dev/usb/lp0
-```
-To give access to the printer to users (this is also needed for CUPS to work.)
 
 ## Install in CUPS
 ---------------
