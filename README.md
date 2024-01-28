@@ -36,7 +36,9 @@ sudo make
 sudo make install
 # You need to have USB Printer support in your kernel. Install the needed module via
 sudo modprobe usblp
-# And a new device should appear (/dev/usb/lp0). Change permissions to give access to the printer to users (this is also needed for CUPS to work.)
+# And a new device should appear (/dev/usb/lp0). 
+# Change permissions to give access to the printer to users.
+# Tthis is also needed for CUPS to work.
 sudo chmod a+rw /dev/usb/lp0
 ```
 
