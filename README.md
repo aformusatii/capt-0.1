@@ -51,3 +51,7 @@ sudo chmod a+rw /dev/usb/lp0
 Follow the instructions presented on this page: http://www.linuxprinting.org/cups-doc.html
 When installing, do not select an USB port, but a dummy serial port (for example Serial Port #8).
 To align the margin, change TopSkip and LeftSkip parameters.
+
+## Links
+---------------
+https://habr.com/ru/articles/314962/
