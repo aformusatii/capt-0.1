@@ -28,7 +28,7 @@ In this package there is a linux driver for Canon printer using CAPT protocol.
 The general structure of the application is based on Rildo Pragana's driver for Samsung ML-85G, see : http://pragana.net - "Adventures in Linux Programming".
 It should support both A4 and Letter sized paper, but I only tested it with A4 sized paper.
 
-## Install
+## Install Driver
 -------
 ```sh
 git clone https://github.com/aformusatii/capt-0.1.git
@@ -45,7 +45,7 @@ sudo modprobe usblp
 sudo chmod a+rw /dev/usb/lp0
 ```
 
-## Install in CUPS
+## Install Printer in CUPS
 ---------------
 
 Follow the instructions presented on this page: http://www.linuxprinting.org/cups-doc.html
